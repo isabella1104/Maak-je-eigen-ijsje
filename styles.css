@@ -1,0 +1,94 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #fffacd;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #ff69b4;
+}
+
+.ice-cream {
+    position: relative;
+    width: 100px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.cone {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #d2691e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.scoop {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    overflow: hidden;
+    /* Verberg overflowende sprinkles */
+    z-index: 1;
+    /* Zet de scoop bovenop de sprinkles */
+}
+
+.sprinkles {
+    position: absolute;
+    top: 50px;
+    /* Positie bovenop de scoop aanpassen naar wens */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+    z-index: 2;
+    /* Zet de sprinkles bovenop de scoop */
+}
+
+.sprinkle {
+    position: absolute;
+    background-color: #ffcc00;
+    /* Kleur van de sprinkles */
+    border-radius: 50%;
+    width: 10px;
+    /* Diameter van de sprinkle */
+    height: 10px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #add8e6;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #87ceeb;
+}
+
+.flavor-btn {
+    margin-bottom: 10px;
+}
